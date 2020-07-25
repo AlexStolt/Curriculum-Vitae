@@ -1,0 +1,54 @@
+:root {
+    --black-bg: #171717;
+    --white-font: #CFCFCF;
+    --green-hover: #1DB954;
+    --red-font: #FF5C5C;
+    --red-hover:#FF8888;
+}
+
+@media (min-width: 1040px){
+    header {
+        position: fixed;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 10vw auto;
+        column-gap: 0.8vw;
+        background-color: var(--black-bg);
+        
+    }
+
+    #logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo{
+        font-size: 1.4vw;
+        color: var(--red-font);
+    }
+
+    #logo:hover {
+        color: var(--red-hover);
+    }
+
+    #menu-container {
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        column-gap: 0.8vw;
+    }
+
+    .menu-item {
+        margin: 2vw auto;
+        font-size: 1vw;
+    }
+    
+    a:hover {
+        color: var(--green-hover);
+    }
+    
+    #hamburger {
+        display: none;
+    }
+}
+  

@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font-family: 'Raleway';
+    --header-font-family: sans-serif;
+}
+
+body {
+    font-family: var(--main-font-family);
+}
+
+a {
+    color: var(--white-font);
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header {
+    font-family: var(--header-font-family);
+}
+
+.menu-item {
+    margin-left: 200px;
+}
+
