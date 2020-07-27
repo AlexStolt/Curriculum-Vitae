@@ -7,6 +7,9 @@
 :root {
     --main-font-family: 'Raleway';
     --header-font-family: sans-serif;
+    --black-bg: #171717;
+    --white-font: #CFCFCF;
+    --green-hover: #1DB954;
 }
 
 body {

@@ -1,0 +1,49 @@
+@media (min-width: 320px) and (max-width: 1039px) {
+    header {
+        position: fixed;
+        width: 100vw;
+        min-height: 25vw;
+        display: grid;
+        background-color: var(--black-bg);
+        grid-template-columns: auto 70vw;
+        column-gap: 10vw;
+    }
+
+    #logo-container {
+        display: grid;
+        grid-template-columns: auto 30vw;
+        grid-auto-flow: dense;
+        column-gap: 10vw;
+    }
+
+    #image-container {
+        display: block;
+        margin: auto;
+        grid-column: 2;
+    }
+
+    #logo {
+        margin: auto;
+        width: 20vw;
+    }
+
+    #brand-container {
+        grid-column: 1;
+        display: block;
+        margin: auto;
+    }
+
+    #brand {
+        font-size: 6vw;
+        font-family: var(--header-font-family);
+    }
+
+    #menu-container {
+        display: none;
+    }
+
+    #hamburger {
+        text-align: center;
+        margin: auto 0;
+    }
+}
