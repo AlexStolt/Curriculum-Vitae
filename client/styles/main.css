@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font-family: 'Raleway';
+    --header-font-family: sans-serif;
+    --black-bg: #171717;
+    --white-font: #CFCFCF;
+    --green-hover: #1DB954;
+}
+
+
+/******************** Global (Tag Referencing) CSS ********************/
+a {
+    color: var(--white-font);
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/******************** Desktop CSS ********************/
+@media (min-width: 1280px) {
+    #nav-bar {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: 10vw auto;
+        grid-template-areas: 
+        "logo list"
+        "brand list";
+        background-color: var(--black-bg);
+        column-gap: 2vw;
+    }
+
+    #logo-container {
+        grid-area: logo;
+        margin: 0.2vw auto;
+    }
+
+    #logo {
+        width: 5vw;
+    }
+
+    #brand-container {
+        grid-area: brand;
+        margin: 0 auto 0.2vw auto;
+    }
+
+    #brand {
+        font-size: 1.6vw;
+        font-family: var(--header-font-family);
+        color: var(--white-font);
+        text-decoration: none;
+    }
+
+    #menu-container {
+        grid-area: list;
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        margin: auto 0;
+    }
+
+    /*Green Underline Effect*/
+    .menu-item {
+        margin: 1vw auto;
+        padding: 1vw;
+        font-size: 1vw;
+        font-family: var(--main-font-family);
+    }
+    
+    .menu-item:after {
+        display: block;
+        content: '';
+        border-bottom: solid 2px var(--green-hover);  
+        transform: scaleX(0);  
+        transition: transform 140ms ease-in-out;
+    }
+
+    .menu-item:hover:after { 
+        transform: scaleX(1); 
+    }
+
+    #hamburger-container {
+        display: none;
+    }
+}
+
+
+/******************** Mobile CSS ********************/
+@media (min-width: 320px) and (max-width: 1024px) {
+    #nav-bar {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: var(--black-bg);
+    }
+
+    #logo-container {
+        margin: auto;
+    }
+
+    #logo {
+        margin: 2vw;
+        width: 24vw;
+    }
+
+    #brand-container {
+        margin: auto;
+    }
+
+    #brand {
+        font-size: 6vw;
+        font-family: var(--header-font-family);
+        color: var(--white-font);
+        text-decoration: none;
+    }
+
+    #menu-container {
+        display: none;
+    }
+
+    #hamburger-container {
+        margin: auto;
+    }
+}
