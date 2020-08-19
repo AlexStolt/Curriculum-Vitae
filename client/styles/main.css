@@ -5,15 +5,21 @@
 }
 
 :root {
-    --main-font-family: 'Raleway';
-    --header-font-family: sans-serif;
+    --header-font-family:
+    --font-family: 'Raleway', sans-serif;
     --black-bg: #171717;
+    --grey-bg: 	#bfbfbf;
     --white-font: #CFCFCF;
     --green-hover: #1DB954;
 }
 
 
 /******************** Global (Tag Referencing) CSS ********************/
+main {
+    background-color: var(--grey-bg);
+}
+
+
 a {
     color: var(--white-font);
     text-decoration: none;
@@ -23,10 +29,14 @@ ul {
     list-style-type: none;
 }
 
+
+
 /******************** Desktop CSS ********************/
 @media (min-width: 1280px) {
     #nav-bar {
         display: grid;
+        position: fixed;
+        width: 100vw;
         grid-template-rows: repeat(2, auto);
         grid-template-columns: 10vw auto;
         grid-template-areas: 
@@ -34,25 +44,26 @@ ul {
         "brand list";
         background-color: var(--black-bg);
         column-gap: 2vw;
+        padding-top: 0.6vw;
     }
 
     #logo-container {
         grid-area: logo;
-        margin: 0.2vw auto;
+        margin: 0 auto;
     }
 
     #logo {
-        width: 5vw;
+        width: 4vw;
     }
 
     #brand-container {
         grid-area: brand;
-        margin: 0 auto 0.2vw auto;
+        margin: 0 auto;
     }
 
     #brand {
         font-size: 1.6vw;
-        font-family: var(--header-font-family);
+        font-family: var(--font-family);
         color: var(--white-font);
         text-decoration: none;
     }
@@ -69,7 +80,7 @@ ul {
         margin: 1vw auto;
         padding: 1vw;
         font-size: 1vw;
-        font-family: var(--main-font-family);
+        font-family: var(--font-family);
     }
     
     .menu-item:after {
@@ -87,6 +98,26 @@ ul {
     #hamburger-container {
         display: none;
     }
+
+
+    /*Main Document*/
+    .section {
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .section-header {
+        color: var(--black-bg);
+        font-family: var(--font-family);
+        font-weight: 100;
+        margin: 1.2vw 0;
+    }
+
+    #summary {
+        padding-top: 8vw;
+    }
+
+
 }
 
 
@@ -94,6 +125,8 @@ ul {
 @media (min-width: 320px) and (max-width: 1024px) {
     #nav-bar {
         display: grid;
+        position: fixed;
+        width: 100vw;
         grid-template-columns: repeat(3, 1fr);
         background-color: var(--black-bg);
     }
