@@ -5,7 +5,7 @@
 }
 
 :root {
-    --header-font-family:
+    --header-font-family: 'Montserrat', sans-serif;
     --font-family: 'Raleway', sans-serif;
     --black-bg: #171717;
     --grey-bg: 	#bfbfbf;
@@ -45,6 +45,7 @@ ul {
         background-color: var(--black-bg);
         column-gap: 2vw;
         padding-top: 0.6vw;
+        border-bottom: 1px solid black;
     }
 
     #logo-container {
@@ -53,7 +54,7 @@ ul {
     }
 
     #logo {
-        width: 4vw;
+        width: 2vw;
     }
 
     #brand-container {
@@ -63,7 +64,7 @@ ul {
 
     #brand {
         font-size: 1.6vw;
-        font-family: var(--font-family);
+        font-family: var(--header-font-family);
         color: var(--white-font);
         text-decoration: none;
     }
@@ -108,7 +109,7 @@ ul {
 
     .section-header {
         color: var(--black-bg);
-        font-family: var(--font-family);
+        font-family: var(--header-font-family);
         font-weight: 100;
         margin: 1.2vw 0;
     }
