@@ -1,0 +1,175 @@
+/******************** Desktop CSS ********************/
+@media (min-width: 415px) {
+    #nav-bar {
+        display: grid;
+        position: fixed;
+        width: 100vw;
+        height: 6vw;
+        min-height: 50px;
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: 10vw auto;
+        grid-template-areas: 
+        "logo list"
+        "brand list";
+        background-color: var(--black-bg);
+        column-gap: 2vw;
+        padding-top: 0.6vw;
+        border-bottom: 1px solid black;
+    }
+
+    #logo-container {
+        grid-area: logo;
+        margin: 0 auto;
+    }
+
+    #logo {
+        width: 4vw;
+    }
+
+    #brand-container {
+        grid-area: brand;
+        margin: 0 auto;
+    }
+
+    #brand {
+        font-size: 1.6vw;
+        font-family: var(--header-font-family);
+        color: var(--white-font);
+        text-decoration: none;
+    }
+
+    #menu-container {
+        grid-area: list;
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        margin: auto 0;
+    }
+
+    /*Green Underline Effect*/
+    .menu-item {
+        margin: 1vw auto;
+        padding: 1vw;
+        font-size: 1vw;
+        font-family: var(--font-family);
+    }
+    
+    .menu-item:after {
+        display: block;
+        content: '';
+        border-bottom: solid 2px var(--green-hover);  
+        transform: scaleX(0);  
+        transition: transform 140ms ease-in-out;
+    }
+
+    .menu-item:hover:after { 
+        transform: scaleX(1); 
+    }
+
+    #signature {
+        display: none;
+    }
+
+    #hamburger-container {
+        display: none;
+    }
+}
+
+
+/******************** Mobile CSS ********************/
+@media (min-width: 320px) and (max-width: 414px) {
+    #nav-bar {
+        display: grid;
+        position: fixed;
+        width: 100vw;
+        height: 26vw;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: var(--black-bg);
+    }
+
+    #logo-container {
+        margin: auto;
+    }
+
+    #logo {
+        margin: 2vw;
+        width: 24vw;
+    }
+
+    #brand-container {
+        margin: auto;
+    }
+
+    #brand {
+        display: block;
+        font-size: 6vw;
+        font-family: var(--header-font-family);
+        color: var(--white-font);
+        text-decoration: none;
+        padding: 2vw;
+    }
+
+    #brand:after {
+        display: block;
+        content: '';
+        border-bottom: solid 2px var(--green-hover);  
+        transform: scaleX(0);  
+        transition: transform 80ms ease-in-out;
+    }
+
+    #brand:active:after {
+        transform: scaleX(1);
+    }
+
+    #menu-container {
+        /*Display As A Slide Navigation Menu*/
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 26vw;
+        right: 0;
+        background-color: var(--black-bg);
+        overflow-x: hidden;
+        transition: 0.2s;
+
+        /*Style the Nav Bar*/
+        display: grid;
+        grid-template-rows: repeat(6, 6vh) auto;
+        padding: 6vh 0;
+    }
+
+    .menu-item {
+        color: var(--green-hover);
+        margin: 0 6vw;
+        font-family: var(--font-family);
+        font-size: 4vw;
+    }
+
+    .menu-item > a {
+        padding: 2vw;
+    }
+
+    #signature {
+        font-family: var(--header-font-family);
+        font-size: 6vw;
+        color: var(--signature-color);
+        text-align: center;
+        margin-top: 30vh;
+    }
+
+    #hamburger-container {
+        margin: auto;
+    }
+
+    #hamburger {
+        padding: 2vw;
+        margin-left: 10vw;
+        color: var(--white-font);
+        font-size: 6vw;
+    }
+
+    #hamburger:active {
+        animation: shake 0.2s;
+        animation-iteration-count: infinite;
+    }
+}   

@@ -1,250 +1,120 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 :root {
-    --header-font-family: 'Montserrat', sans-serif;
-    --font-family: 'Raleway', sans-serif;
-    --black-bg: #171717;
-    --grey-bg: 	#bfbfbf;
-    --white-font: #CFCFCF;
-    --green-hover: #1DB954;
-    --signature-color: #eb8f8f;
-}
-
-@keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
-
-/******************** Global (Tag Referencing) CSS ********************/
-main {
-    background-color: var(--grey-bg);
+    --header-size: 2vw;
+    --sub--header-size: 1.6vw;
+    --content-size: 1vw;
 }
 
 
-a {
-    color: var(--white-font);
-    text-decoration: none;
-}
 
-a, a:active, a:focus{
-    outline: none;
-}
-
-ul {
-    list-style-type: none;
-}
-
-.prevent-highlighting {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
 
 /******************** Desktop CSS ********************/
 @media (min-width: 415px) {
-    #nav-bar {
-        display: grid;
-        position: fixed;
-        width: 100vw;
-        grid-template-rows: repeat(2, auto);
-        grid-template-columns: 10vw auto;
-        grid-template-areas: 
-        "logo list"
-        "brand list";
-        background-color: var(--black-bg);
-        column-gap: 2vw;
-        padding-top: 0.6vw;
-        border-bottom: 1px solid black;
+    #main {
+        padding-top: 8vw;
     }
-
-    #logo-container {
-        grid-area: logo;
-        margin: 0 auto;
-    }
-
-    #logo {
-        width: 4vw;
-    }
-
-    #brand-container {
-        grid-area: brand;
-        margin: 0 auto;
-    }
-
-    #brand {
-        font-size: 1.6vw;
-        font-family: var(--header-font-family);
-        color: var(--white-font);
-        text-decoration: none;
-    }
-
-    #menu-container {
-        grid-area: list;
-        display: grid;
-        grid-template-columns: repeat(6, auto);
-        margin: auto 0;
-    }
-
-    /*Green Underline Effect*/
-    .menu-item {
-        margin: 1vw auto;
-        padding: 1vw;
-        font-size: 1vw;
-        font-family: var(--font-family);
-    }
-    
-    .menu-item:after {
-        display: block;
-        content: '';
-        border-bottom: solid 2px var(--green-hover);  
-        transform: scaleX(0);  
-        transition: transform 140ms ease-in-out;
-    }
-
-    .menu-item:hover:after { 
-        transform: scaleX(1); 
-    }
-
-    #signature {
-        display: none;
-    }
-
-    #hamburger-container {
-        display: none;
-    }
-
 
     /*Main Document*/
     .section {
-        padding-left: 2vw;
-        padding-right: 2vw;
+        padding: 0 16vw;
     }
 
     .section-header {
-        color: var(--black-bg);
-        font-family: var(--header-font-family);
+        font-size: var(--header-size);
+        font-family: var(--header-font-family); 
         font-weight: 100;
-        margin: 1.2vw 0;
+        margin: 1.6vw 0;
     }
 
-    #summary {
-        padding-top: 8vw;
+    .section-sub-header {
+        color: var(--text-color);
+        font-size: var(--sub--header-size);
+        font-family: var(--header-font-family); 
+        font-weight: 400;
+        margin: 2vw 0 0.2vw 0;
+    }
+
+    .section-content {
+        font-family: var(--font-family);
+        font-size: var(--content-size);
+    }
+
+    #downloader-section {
+        margin: 4vw;
+        height: 8vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10vw;
+    }
+
+    .download-btn {
+        height: 6vw;
+        background-color: var(--green-hover);
+        border: none;
+        border-radius: 200px;
+        -moz-border-radius: 200px;
+        -webkit-border-radius: 200px;
+        cursor: pointer;
+        margin: auto;
+    }
+
+    .download-btn:hover {
+        height: 6.4vw;
+        background-color: var(--green-hover-button);
+    }
+    
+    .download-btn:active {
+        border: 2px solid black;
+        background-color: var(--green-hover);
+        padding: 0.2vw;
+    }
+
+    .btn-content-container {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        column-gap: 1vw;
+        padding: 2vw;
+    }
+
+    .download-text {
+        font-size: 1.4vw;
+        font-family: var(--font-family);
+        margin: auto 0;
+    }
+
+    .download-icon {
+        width: 2vw;
     }
 }
 
 
 /******************** Mobile CSS ********************/
 @media (min-width: 320px) and (max-width: 414px) {
-    #nav-bar {
-        display: grid;
-        position: fixed;
-        width: 100vw;
-        height: 26vw;
-        grid-template-columns: repeat(3, 1fr);
-        background-color: var(--black-bg);
+    #main {
+        padding-top: 30vw;
     }
 
-    #logo-container {
-        margin: auto;
+    .section {
+        padding: 0 4vw;
     }
 
-    #logo {
-        margin: 2vw;
-        width: 24vw;
+    .section-header {
+        font-size: var(--header-size);
+        font-family: var(--header-font-family); 
+        font-weight: 100;
+        margin: 1.6vw 0;
     }
 
-    #brand-container {
-        margin: auto;
+    .section-sub-header {
+        color: var(--text-color);
+        font-size: var(--sub--header-size);
+        font-family: var(--header-font-family); 
+        font-weight: 400;
+        margin: 0.4vw 0;
     }
 
-    #brand {
-        display: block;
-        font-size: 6vw;
-        font-family: var(--header-font-family);
-        color: var(--white-font);
-        text-decoration: none;
-        padding: 2vw;
-    }
-
-    #brand:after {
-        display: block;
-        content: '';
-        border-bottom: solid 2px var(--green-hover);  
-        transform: scaleX(0);  
-        transition: transform 80ms ease-in-out;
-    }
-
-    #brand:active:after {
-        transform: scaleX(1);
-    }
-
-    #menu-container {
-        /*Display As A Slide Navigation Menu*/
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 26vw;
-        right: 0;
-        background-color: var(--black-bg);
-        overflow-x: hidden;
-        transition: 0.2s;
-
-        /*Style the Nav Bar*/
-        display: grid;
-        grid-template-rows: repeat(6, 6vh) auto;
-        padding: 6vh 0;
-    }
-
-    .menu-item {
-        color: var(--green-hover);
-        margin: 0 6vw;
+    .section-content {
         font-family: var(--font-family);
-        font-size: 4vw;
+        font-size: var(--content-size);
     }
-
-    .menu-item > a {
-        padding: 2vw;
-    }
-
-    #signature {
-        font-family: var(--header-font-family);
-        font-size: 6vw;
-        color: var(--signature-color);
-        text-align: center;
-        margin-top: 30vh;
-    }
-
-    #hamburger-container {
-        margin: auto;
-    }
-
-    #hamburger {
-        padding: 2vw;
-        margin-left: 10vw;
-        color: var(--white-font);
-        font-size: 6vw;
-    }
-
-    #hamburger:active {
-        animation: shake 0.2s;
-        animation-iteration-count: infinite;
-    }
-}   
+}
