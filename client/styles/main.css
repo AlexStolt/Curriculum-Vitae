@@ -58,7 +58,7 @@ ul {
 }
 
 /******************** Desktop CSS ********************/
-@media (min-width: 1280px) {
+@media (min-width: 415px) {
     #nav-bar {
         display: grid;
         position: fixed;
@@ -151,7 +151,7 @@ ul {
 
 
 /******************** Mobile CSS ********************/
-@media (min-width: 320px) and (max-width: 1024px) {
+@media (min-width: 320px) and (max-width: 414px) {
     #nav-bar {
         display: grid;
         position: fixed;

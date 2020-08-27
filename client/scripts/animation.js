@@ -10,7 +10,7 @@ logo.onclick = () => {
 
 brand.onclick = () => {
     //At Desktop Length
-    if (window.innerWidth > 1024) {
+    if (window.innerWidth > 414) {
         setTimeout(() => {
             logo.style.animation = "none";
         }, 400)
