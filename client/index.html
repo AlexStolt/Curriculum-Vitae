@@ -6,18 +6,20 @@
     <title>AlexStolt</title>
     <!--CSS-->
     <link rel="stylesheet" href="styles/main.css">
+    
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
-
+    <!--Font Awesome Icons (Static File From Server)-->
+    <link rel="stylesheet" href="icons/css/all.css">
 </head>
 <body>
     <header>
         <nav id="nav-bar">
-            <a href="#" id="logo-container"><img src="images/logo.png" alt="images/logo.png" id="logo"></a>
+            <a href="#" id="logo-container" class="prevent-highlighting"><img src="images/logo.png" alt="images/logo.png" id="logo"></a>
             <div id="brand-container">
-                <a href="#" id="brand">AlexStolt</a>
+                <a href="#" class="prevent-highlighting" id="brand">AlexStolt</a>
             </div>
             <ul id="menu-container">
                 <li class="menu-item"><a href="#">Professional Summary</a></li>
@@ -28,7 +30,7 @@
                 <li class="menu-item"><a href="#">Contact Information</a></li>
             </ul>
             <div id="hamburger-container">
-                <a href="#" id="hamburger">||||</a>
+                <button id="hamburger-btn"><i class="fa fa-bars fa-2x" aria-hidden="true" id="hamburger-icon"></i></i></button>
             </div>
         </nav>
     </header>
@@ -38,5 +40,10 @@
             <p class="section-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat sed eaque architecto a veritatis? Ut modi qui omnis ex necessitatibus veritatis labore quidem? Quae nihil pariatur dolorem quibusdam ut possimus voluptate, sequi repellendus at nobis velit totam aperiam quis, nam, voluptatem architecto sapiente maiores perspiciatis deserunt aut excepturi tempore mollitia ipsa. Deleniti fuga mollitia accusantium rem dolorem ut voluptatibus voluptate consequuntur sit. Obcaecati recusandae consequuntur omnis fugit modi tempora nihil ullam optio soluta atque est eaque earum nam mollitia, architecto rem quis maiores cum porro aperiam perferendis sequi doloribus corrupti nulla? Ipsa sit modi corrupti earum, accusamus officiis eum consequuntur.</p>
         </section>
     </main>
+
+
+
+    <!--JavaScript-->
+    <script src="scripts/animation.js"></script>
 </body>
 </html>

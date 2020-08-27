@@ -13,6 +13,19 @@
     --green-hover: #1DB954;
 }
 
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
 
 /******************** Global (Tag Referencing) CSS ********************/
 main {
@@ -25,11 +38,23 @@ a {
     text-decoration: none;
 }
 
+a, a:active, a:focus{
+    outline: none;
+}
+
 ul {
     list-style-type: none;
 }
 
-
+.prevent-highlighting {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 
 /******************** Desktop CSS ********************/
 @media (min-width: 1280px) {
@@ -117,8 +142,6 @@ ul {
     #summary {
         padding-top: 8vw;
     }
-
-
 }
 
 
@@ -146,10 +169,24 @@ ul {
     }
 
     #brand {
+        display: block;
         font-size: 6vw;
         font-family: var(--header-font-family);
         color: var(--white-font);
         text-decoration: none;
+        padding: 2vw;
+    }
+
+    #brand:after {
+        display: block;
+        content: '';
+        border-bottom: solid 2px var(--green-hover);  
+        transform: scaleX(0);  
+        transition: transform 80ms ease-in-out;
+    }
+
+    #brand:active:after {
+        transform: scaleX(1);
     }
 
     #menu-container {
@@ -158,5 +195,22 @@ ul {
 
     #hamburger-container {
         margin: auto;
+    }
+
+    #hamburger-btn {
+        width: 12vw;
+        height: 12vw;
+        margin-left: 12vw;
+        background-color: var(--black-bg);
+        border: none;
+        outline:none;
+    }
+    #hamburger-icon {
+        color: var(--white-font);
+    }
+
+    #hamburger-icon:active {
+        animation: shake 0.2s;
+        animation-iteration-count: infinite;
     }
 }
