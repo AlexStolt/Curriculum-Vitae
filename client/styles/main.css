@@ -11,6 +11,7 @@
     --grey-bg: 	#bfbfbf;
     --white-font: #CFCFCF;
     --green-hover: #1DB954;
+    --signature-color: #eb8f8f;
 }
 
 @keyframes shake {
@@ -121,6 +122,10 @@ ul {
         transform: scaleX(1); 
     }
 
+    #signature {
+        display: none;
+    }
+
     #hamburger-container {
         display: none;
     }
@@ -151,6 +156,7 @@ ul {
         display: grid;
         position: fixed;
         width: 100vw;
+        height: 26vw;
         grid-template-columns: repeat(3, 1fr);
         background-color: var(--black-bg);
     }
@@ -190,27 +196,55 @@ ul {
     }
 
     #menu-container {
-        display: none;
+        /*Display As A Slide Navigation Menu*/
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 26vw;
+        right: 0;
+        background-color: var(--black-bg);
+        overflow-x: hidden;
+        transition: 0.2s;
+
+        /*Style the Nav Bar*/
+        display: grid;
+        grid-template-rows: repeat(6, 6vh) auto;
+        padding: 6vh 0;
+    }
+
+    .menu-item {
+        color: var(--green-hover);
+        margin: 0 6vw;
+        font-family: var(--font-family);
+        font-size: 4vw;
+    }
+
+    .menu-item > a {
+        padding: 2vw;
+    }
+
+    #signature {
+        font-family: var(--header-font-family);
+        font-size: 6vw;
+        color: var(--signature-color);
+        text-align: center;
+        margin-top: 30vh;
     }
 
     #hamburger-container {
         margin: auto;
     }
 
-    #hamburger-btn {
-        width: 12vw;
-        height: 12vw;
-        margin-left: 12vw;
-        background-color: var(--black-bg);
-        border: none;
-        outline:none;
-    }
-    #hamburger-icon {
+    #hamburger {
+        padding: 2vw;
+        margin-left: 10vw;
         color: var(--white-font);
+        font-size: 6vw;
     }
 
-    #hamburger-icon:active {
+    #hamburger:active {
         animation: shake 0.2s;
         animation-iteration-count: infinite;
     }
-}
+}   
