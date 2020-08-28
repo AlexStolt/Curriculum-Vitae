@@ -44,11 +44,12 @@
         height: 8vw;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 10vw;
+        column-gap: 2vw;
     }
 
     .download-btn {
-        height: 6vw;
+        height: 4.8vw;
+        width: 18vw;
         background-color: var(--green-hover);
         border: none;
         border-radius: 200px;
@@ -59,30 +60,24 @@
     }
 
     .download-btn:hover {
-        height: 6.4vw;
+        height: 5.2vw;
+        width: 18.4vw;
         background-color: var(--green-hover-button);
     }
     
     .download-btn:active {
         border: 2px solid black;
         background-color: var(--green-hover);
-        padding: 0.2vw;
-    }
-
-    .btn-content-container {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        column-gap: 1vw;
-        padding: 2vw;
     }
 
     .download-text {
-        font-size: 1.4vw;
+        font-size: 1.2vw;
         font-family: var(--font-family);
         margin: auto 0;
     }
 
     .download-icon {
+        margin-top: 0.2vw;
         width: 2vw;
     }
 }
