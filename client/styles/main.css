@@ -1,12 +1,16 @@
+.section-header-container {
+    border-bottom: 1px solid var(--underline-grey)
+}
+
 .section-header {
     font-family: var(--header-font-family); 
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .section-sub-header {
     color: var(--text-color);
     font-family: var(--header-font-family); 
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .section-content {
@@ -41,23 +45,24 @@
         padding-top: 8vw;
     }
 
-    /*Main Document*/
     .section {
         padding: 0 16vw;
     }
 
+    .section-header-container {
+        margin: 2vw 0;
+    }
     .section-header {
         font-size: var(--header-desktop);
-        margin: 1.6vw 0;
     }
 
     .section-sub-header {
         font-size: var(--sub-header-desktop);
-        margin: 2vw 0 0.2vw 0;
     }
 
     .section-content {
-        font-size: var(--content-size);
+        margin: 0.2vw 0 2vw 0;
+        font-size: var(--content-desktop);
     }
 
     #downloader-section {
@@ -81,6 +86,7 @@
     
     .download-text {
         font-size: 1.2vw;
+        font-weight: 500;
     }
 
     .download-icon {
@@ -100,21 +106,25 @@
         padding: 0 4vw;
     }
 
+    .section-header-container {
+        margin: 6vw 0;
+    }
+
     .section-header {
         font-size: var(--header-mobile);
-        margin: 1.6vw 0;
     }
 
     .section-sub-header {
         font-size: var(--sub-header-mobile);
-        margin: 2vw 0 0.4vw 0;
     }
 
     .section-content {
-        font-size: var(--content-size);
+        margin: 2vw 0 6vw 0;
+        font-size: 4vw;
     }
 
     #downloader-section {
+        margin: 2vh 0;
         height: 22vh;
         display: grid;
         grid-template-rows: repeat(2, 1fr);
@@ -124,7 +134,6 @@
         display: grid;
         grid-template-columns: repeat(2, auto);
         height: 12vw;
-        
     }
     
     .download-text {

@@ -19,9 +19,10 @@ html {
     --signature-color: #eb8f8f;
     --header-desktop: 2vw;
     --header-mobile: 6vw;
-    --sub-header-desktop: 1.2vw;
-    --sub-header-mobile: 3.4vw;
-    --content-size: 1vw;
+    --sub-header-desktop: 1.4vw;
+    --sub-header-mobile: 4.2vw;
+    --content-desktop: 1.2vw;
+    --underline-grey: #717171;
 }
 
 @keyframes shake {
