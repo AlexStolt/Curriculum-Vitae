@@ -1,9 +1,24 @@
+#nav-bar {
+    position: fixed;
+    width: 100vw;
+    background-color: var(--black-bg);
+}
+
+#brand {
+    font-family: var(--header-font-family);
+    color: var(--white-font);
+    text-decoration: none;
+}
+
+.menu-item {
+    font-family: var(--font-family);
+}
+
+
 /******************** Desktop CSS ********************/
 @media (min-width: 415px) {
     #nav-bar {
         display: grid;
-        position: fixed;
-        width: 100vw;
         height: 6vw;
         min-height: 50px;
         grid-template-rows: repeat(2, auto);
@@ -11,7 +26,6 @@
         grid-template-areas: 
         "logo list"
         "brand list";
-        background-color: var(--black-bg);
         column-gap: 2vw;
         padding-top: 0.6vw;
         border-bottom: 1px solid black;
@@ -33,9 +47,6 @@
 
     #brand {
         font-size: 1.6vw;
-        font-family: var(--header-font-family);
-        color: var(--white-font);
-        text-decoration: none;
     }
 
     #menu-container {
@@ -50,7 +61,6 @@
         margin: 1vw auto;
         padding: 1vw;
         font-size: 1vw;
-        font-family: var(--font-family);
     }
     
     .menu-item:after {
@@ -79,11 +89,8 @@
 @media (min-width: 320px) and (max-width: 414px) {
     #nav-bar {
         display: grid;
-        position: fixed;
-        width: 100vw;
         height: 26vw;
         grid-template-columns: repeat(3, 1fr);
-        background-color: var(--black-bg);
     }
 
     #logo-container {
@@ -102,9 +109,6 @@
     #brand {
         display: block;
         font-size: 6vw;
-        font-family: var(--header-font-family);
-        color: var(--white-font);
-        text-decoration: none;
         padding: 2vw;
     }
 
@@ -141,7 +145,6 @@
     .menu-item {
         color: var(--green-hover);
         margin: 0 6vw;
-        font-family: var(--font-family);
         font-size: 4vw;
     }
 
@@ -172,4 +175,4 @@
         animation: shake 0.2s;
         animation-iteration-count: infinite;
     }
-}   
+}

@@ -1,10 +1,37 @@
-
-:root {
-    --header-size: 2vw;
-    --sub--header-size: 1.6vw;
-    --content-size: 1vw;
+.section-header {
+    font-family: var(--header-font-family); 
+    font-weight: 100;
 }
 
+.section-sub-header {
+    color: var(--text-color);
+    font-family: var(--header-font-family); 
+    font-weight: 400;
+}
+
+.section-content {
+    font-family: var(--font-family);
+}
+
+.download-btn {
+    background-color: var(--green-hover);
+    border: none;
+    border-radius: 200px;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.download-btn:active {
+    border: 2px solid black;
+    background-color: var(--green-hover);
+}
+
+.download-text {
+    font-family: var(--font-family);
+    margin: auto 0;
+}
 
 
 
@@ -20,22 +47,16 @@
     }
 
     .section-header {
-        font-size: var(--header-size);
-        font-family: var(--header-font-family); 
-        font-weight: 100;
+        font-size: var(--header-desktop);
         margin: 1.6vw 0;
     }
 
     .section-sub-header {
-        color: var(--text-color);
-        font-size: var(--sub--header-size);
-        font-family: var(--header-font-family); 
-        font-weight: 400;
+        font-size: var(--sub-header-desktop);
         margin: 2vw 0 0.2vw 0;
     }
 
     .section-content {
-        font-family: var(--font-family);
         font-size: var(--content-size);
     }
 
@@ -50,13 +71,6 @@
     .download-btn {
         height: 4.8vw;
         width: 18vw;
-        background-color: var(--green-hover);
-        border: none;
-        border-radius: 200px;
-        -moz-border-radius: 200px;
-        -webkit-border-radius: 200px;
-        cursor: pointer;
-        margin: auto;
     }
 
     .download-btn:hover {
@@ -65,15 +79,8 @@
         background-color: var(--green-hover-button);
     }
     
-    .download-btn:active {
-        border: 2px solid black;
-        background-color: var(--green-hover);
-    }
-
     .download-text {
         font-size: 1.2vw;
-        font-family: var(--font-family);
-        margin: auto 0;
     }
 
     .download-icon {
@@ -94,22 +101,20 @@
     }
 
     .section-header {
-        font-size: var(--header-size);
-        font-family: var(--header-font-family); 
-        font-weight: 100;
+        font-size: var(--header-mobile);
         margin: 1.6vw 0;
     }
 
     .section-sub-header {
-        color: var(--text-color);
-        font-size: var(--sub--header-size);
-        font-family: var(--header-font-family); 
-        font-weight: 400;
+        font-size: var(--sub-header-mobile);
         margin: 0.4vw 0;
     }
 
     .section-content {
         font-family: var(--font-family);
         font-size: var(--content-size);
+    }
+    .download-icon {
+        width: 25px;
     }
 }

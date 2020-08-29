@@ -17,6 +17,11 @@ html {
     --green-hover: #1DB954;
     --green-hover-button: #22c75c;
     --signature-color: #eb8f8f;
+    --header-desktop: 2vw;
+    --header-mobile: 6vw;
+    --sub-header-desktop: 1.6vw;
+    --sub-header-mobile: 12px;
+    --content-size: 1vw;
 }
 
 @keyframes shake {
