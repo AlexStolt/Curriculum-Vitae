@@ -40,10 +40,9 @@ html {
   }
 
 /******************** Global (Tag Referencing) CSS ********************/
-main {
+body {
     background-color: var(--main-bg);
 }
-
 
 a {
     color: var(--white-font);
