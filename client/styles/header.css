@@ -26,7 +26,6 @@
         grid-template-areas: 
         "logo list"
         "brand list";
-        column-gap: 2vw;
         padding-top: 0.6vw;
         border-bottom: 1px solid black;
     }
