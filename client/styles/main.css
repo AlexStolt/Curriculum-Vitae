@@ -37,7 +37,9 @@
     margin: auto 0;
 }
 
-
+.highlight {
+    font-weight: 600;
+}
 
 /******************** Desktop CSS ********************/
 @media (min-width: 415px) {
@@ -46,7 +48,7 @@
     }
 
     .section {
-        padding: 0 16vw;
+        padding: 0 10vw;
     }
 
     .section-header-container {
