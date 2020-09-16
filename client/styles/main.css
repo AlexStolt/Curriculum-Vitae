@@ -39,6 +39,7 @@
 
 .highlight {
     font-weight: 600;
+    font-style: italic;
 }
 
 /******************** Desktop CSS ********************/
@@ -81,7 +82,7 @@
     }
 
     .download-btn:hover {
-        height: 5.2vw;
+        height: 5.2vw;  
         width: 18.4vw;
         background-color: var(--green-hover-button);
     }
@@ -133,9 +134,13 @@
     }
 
     .download-btn {
+        height: 12vw;
+    }
+
+    .column-split {
         display: grid;
         grid-template-columns: repeat(2, auto);
-        height: 12vw;
+        column-gap: 0.4vw;
     }
     
     .download-text {
@@ -146,11 +151,7 @@
     }
 
     .download-icon {
-        width: 2vw;
+        width: 6vw;
         margin: auto 6vw auto 0;
-    }
-    
-    .download-icon {
-        width: 25px;
     }
 }
