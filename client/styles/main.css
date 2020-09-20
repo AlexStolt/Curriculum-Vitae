@@ -11,6 +11,13 @@
     color: var(--text-color);
     font-family: var(--header-font-family); 
     font-weight: 600;
+    
+}
+
+.small-header {
+    color: var(--text-color);
+    font-family: var(--header-font-family);
+    font-weight: 600;
 }
 
 .section-content {
@@ -63,9 +70,23 @@
         font-size: var(--sub-header-desktop);
     }
 
+    .small-header {
+        margin: 1vw 0 0.4vw 0;
+        font-size: var(--small-header-desktop);
+    }
+
     .section-content {
         margin: 0.2vw 0 2vw 0;
         font-size: var(--content-desktop);
+    }
+
+    .content-margin {
+        display: inline-block;
+        margin: 0.2vw 0;
+    }
+
+    .tabulator {
+        margin-left: 1.8vw;
     }
 
     #downloader-section {
@@ -121,9 +142,23 @@
         font-size: var(--sub-header-mobile);
     }
 
+    .small-header {
+        margin: 2vw 0 1vw 0;
+        font-size: var(--small-header-mobile);
+    }
+
     .section-content {
         margin: 2vw 0 6vw 0;
-        font-size: 4vw;
+        font-size: var(--content-mobile);
+    }
+
+    .content-margin {
+        display: inline-block;
+        margin: 1vw 0;
+    }
+
+    .tabulator {
+        margin-left: 4.2vw;
     }
 
     #downloader-section {

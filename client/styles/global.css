@@ -19,9 +19,12 @@ html {
     --signature-color: #eb8f8f;
     --header-desktop: 2vw;
     --header-mobile: 6vw;
-    --sub-header-desktop: 1.4vw;
-    --sub-header-mobile: 4.2vw;
+    --sub-header-desktop: 1.8vw;
+    --sub-header-mobile: 5.6vw;
+    --small-header-desktop: 1.2vw;
+    --small-header-mobile: 4.8vw;
     --content-desktop: 1.2vw;
+    --content-mobile: 4.2vw;
     --underline-grey: #717171;
 }
 
