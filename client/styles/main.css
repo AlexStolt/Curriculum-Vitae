@@ -44,11 +44,6 @@
     margin: auto 0;
 }
 
-.hl {
-    font-weight: 600;
-    font-style: italic;
-}
-
 /******************** Desktop CSS ********************/
 @media (min-width: 415px) {
     #main {
@@ -80,7 +75,7 @@
         font-size: var(--content-desktop);
     }
 
-    .content-margin {
+    .v-mrgn {
         display: inline-block;
         margin: 0.2vw 0;
     }
@@ -152,7 +147,7 @@
         font-size: var(--content-mobile);
     }
 
-    .content-margin {
+    .v-mrgn {
         display: inline-block;
         margin: 1vw 0;
     }
