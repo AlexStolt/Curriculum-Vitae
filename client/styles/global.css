@@ -63,7 +63,7 @@ ul {
     list-style-type: none;
 }
 
-.prevent-highlighting {
+.prevent-hling {
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
