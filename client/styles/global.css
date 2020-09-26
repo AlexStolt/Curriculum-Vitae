@@ -26,6 +26,9 @@ html {
     --content-desktop: 1.2vw;
     --content-mobile: 4.2vw;
     --underline-grey: #717171;
+    --description-desktop: 0.9vw;
+    --description-grey: #585858;
+
 }
 
 @keyframes shake {
