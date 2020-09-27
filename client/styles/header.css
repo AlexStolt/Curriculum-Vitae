@@ -88,17 +88,17 @@
 @media (min-width: 320px) and (max-width: 414px) {
     #nav-bar {
         display: grid;
-        height: 26vw;
+        padding: 2.6vw;
         grid-template-columns: repeat(3, 1fr);
     }
 
     #logo-container {
-        margin: auto;
+        margin: 0 auto;
     }
 
     #logo {
         margin: 2vw;
-        width: 24vw;
+        width: 26vw;
     }
 
     #brand-container {
