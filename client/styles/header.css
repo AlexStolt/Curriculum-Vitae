@@ -88,7 +88,7 @@
 @media (min-width: 320px) and (max-width: 414px) {
     #nav-bar {
         display: grid;
-        padding: 2.6vw;
+        padding: 3vw;
         grid-template-columns: repeat(3, 1fr);
     }
 
