@@ -254,4 +254,47 @@
         width: 6vw;
         margin: auto 6vw auto 0;
     }
+
+    /********************** For Every Card **********************/
+    .card {
+        margin: 6vw auto;
+        padding: 0 2vw;
+        width: 70vw;
+        border: 1px solid var(--underline-grey);
+    }
+    /************************************************************/
+
+    #network-container {
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        column-gap: 2vw;
+    }
+
+    #ml-container {
+        display: grid;
+        grid-template-rows: repeat(1, auto);
+    }
+
+    #hacking-container {
+        display: grid;
+        grid-template-rows: repeat(1, auto);
+    }
+
+    .card-img {
+        margin: 4vw 0 2vw 0;
+        width: 50vw;
+    }
+
+    .card-description {
+        font-size: var(--description-mobile);
+    }
+    
+    .git-page {
+        margin: 4vw 0 0.2vw 0;
+        width: 6vw;
+    }
+
+    .learn-more {
+        margin-bottom: 4vw;
+    }
 }
