@@ -1,0 +1,51 @@
+#footer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+
+.contact-item {
+	color: white;
+	font-family: var(--font-family);
+	margin: 0.6vw 0;
+	font-size: 1vw;
+}
+
+.hl {
+	font-size: 1.2vw;	
+	color: var(--signature-color);
+}
+
+.hl:hover {
+	color: #ffbfbf;
+}
+
+#creator-container {
+	text-align: center;
+}
+
+#creator-logo {
+	width: 6vw;
+}
+
+#creator {
+	font-family: var(--header-font-family);
+	font-size: 1.2vw;
+	color: var(--white-font);
+}
+
+#footer-logo {
+	text-align: center;
+}
+
+#footer-signature {
+	font-family: var(--header-font-family);
+    font-size: 2vw;
+    color: var(--signature-color);
+}
+
+
+#footer-img {
+	margin-top: 0.8vw;
+	width: 4vw;
+}
