@@ -1,114 +1,102 @@
 .contact-item {
-	color: var(--white-font);
-	font-family: var(--font-family);
+    color: var(--white-font);
+    font-family: var(--font-family);
 }
 
 .hl {
-	color: var(--signature-color);
+    color: var(--signature-color);
 }
 
 .contact {
-	color: white;
+    color: white;
 }
 
 #creator-container {
-	text-align: center;
+    text-align: center;
 }
 
 #creator {
-	font-family: var(--header-font-family);
-	color: var(--white-font);
+    font-family: var(--header-font-family);
+    color: var(--white-font);
 }
 
 #footer-logo {
-	text-align: center;
+    text-align: center;
 }
 
 #footer-signature {
-	font-family: var(--header-font-family);
-	color: var(--signature-color);
+    font-family: var(--header-font-family);
+    color: var(--signature-color);
 }
 
 
 /******************** Desktop CSS ********************/
+
 @media (min-width: 415px) {
-	#footer {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-	}
-
-	.contact {
-		margin-bottom: 0.2vw;
-	}
-
-	.contact-item {
-		margin: 0.6vw 0;
-		font-size: 1vw;
-	}
-
-	.hl {
-		font-size: 1.2vw;	
-	}
-
-	.hl:hover {
-		color: #ffbfbf;
-	}
-
-	#creator-logo {
-		width: 6vw;
-	}
-
-	#creator {
-		font-size: 1.2vw;
-	}
-
-	#footer-signature {
-	    font-size: 2vw;
-	}
-
-	#footer-img {
-		margin-top: 0.8vw;
-		width: 4vw;
-	}
+    #footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .contact {
+        margin-bottom: 0.2vw;
+    }
+    .contact-item {
+        margin: 0.6vw 0;
+        font-size: 1vw;
+    }
+    .hl {
+        font-size: 1.2vw;
+    }
+    .hl:hover {
+        color: #ffbfbf;
+    }
+    #creator-logo {
+        width: 6vw;
+    }
+    #creator {
+        font-size: 1.2vw;
+    }
+    #footer-signature {
+        font-size: 2vw;
+    }
+    #footer-img {
+        margin-top: 0.8vw;
+        width: 4vw;
+    }
 }
 
+
 /******************** Mobile CSS ********************/
+
 @media (min-width: 320px) and (max-width: 414px) {
-	#footer {
-		display: grid;
-		grid-template-rows: repeat(3, auto);
-		grid-row-gap: 6vw;	
-	}
-
-	.contact {
-		margin: 4vw 0;
-	}
-
-	.contact-item {
-		margin: 2vw 0;
-		font-size: 3.8vw;
-	}
-
-	.hl {
-		font-size: 5vw;	
-	}
-
-	#creator-logo {
-		margin-top: 2vw;
-		width: 20vw;
-	}
-
-	#creator {
-		font-size: 4.4vw;
-	}
-
-	#footer-signature {
-		margin-top: 10vw;
-	    font-size: 8vw;
-	}
-
-	#footer-img {
-		margin: 4vw 0 10vw 0;
-		width: 20vw;
-	}
+    #footer {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        grid-row-gap: 6vw;
+    }
+    .contact {
+        margin: 4vw 0;
+    }
+    .contact-item {
+        margin: 2vw 0;
+        font-size: 3.8vw;
+    }
+    .hl {
+        font-size: 5vw;
+    }
+    #creator-logo {
+        margin-top: 2vw;
+        width: 20vw;
+    }
+    #creator {
+        font-size: 4.4vw;
+    }
+    #footer-signature {
+        margin-top: 10vw;
+        font-size: 8vw;
+    }
+    #footer-img {
+        margin: 4vw 0 10vw 0;
+        width: 20vw;
+    }
 }
