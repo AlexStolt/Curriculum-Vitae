@@ -132,6 +132,26 @@
         width: 2vw;
     }
 
+    .competencies {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        column-count: 3;
+        column-gap: 2vw;
+        column-rule: 4px double #ff00ff;
+        
+    }
+
+    .competencies > div {
+        margin: 2vw 0;
+    }
+    
+    .border {
+        border-right: 1px solid black;
+    }
+    .competency {
+        margin-top: 1.2vw;
+        text-align: left;
+    }
 
     /********************** For Every Card **********************/
     .card {
