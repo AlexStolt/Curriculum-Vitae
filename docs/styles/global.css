@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --header-font-family: 'Montserrat', sans-serif;
+    --font-family: 'Nanum Gothic', sans-serif;
+    --black-bg: #171717;
+    --main-bg: 	#f0f0f0;
+    --white-font: #CFCFCF;
+    --green-hover: #1DB954;
+    --green-hover-button: #22c75c;
+    --signature-color: #eb8f8f;
+    --header-desktop: 2vw;
+    --header-mobile: 6vw;
+    --sub-header-desktop: 1.8vw;
+    --sub-header-mobile: 5.6vw;
+    --small-header-desktop: 1.2vw;
+    --small-header-mobile: 4.8vw;
+    --content-desktop: 1.2vw;
+    --content-mobile: 4.2vw;
+    --underline-grey: #717171;
+    --description-desktop: 0.9vw;
+    --description-mobile: 3.6vw;
+    --description-grey: #585858;
+
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+/******************** Global (Tag Referencing) CSS ********************/
+body {
+    background-color: var(--main-bg);
+}
+
+a {
+    color: var(--white-font);
+    text-decoration: none;
+}
+
+a, a:active, a:focus{
+    outline: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+footer {
+    margin-top: 2vw;
+    padding: 1.2vw;
+    background-color: var(--black-bg);
+}
+
+.prevent-hling {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    outline: none;
+    user-select: none;
+}
